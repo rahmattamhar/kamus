@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#dbdbdb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:background="#03a9f4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:typeface="sans"
+                    android:paddingTop="25dp"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dp"
+                    android:text="Cari Istilah Yang Kamu Inginkan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <AutoCompleteTextView
+                    android:textColor="#fff"
+                    android:paddingTop="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:ems="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:textColor="#ffffff"
+                    android:background="@drawable/red_color"
+                    android:id="@+id/buttonSearch"
+                    android:layout_gravity="center"
+                    android:text="@string/cari"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:background="#fff1f7e8"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="247dp">
+
+                <TextView
+                    android:padding="4dp"
+                    android:textSize="15dp"
+                    android:id="@+id/textViewKosong"
+                    android:text="@string/kosong"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:padding="4dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:id="@+id/textViewIstilah"
+                    android:text="@string/istilah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:padding="4dp"
+                    android:id="@+id/textViewPengertian"
+                    android:text="@string/pengertian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
